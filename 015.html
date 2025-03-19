@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de cabeleireiro e manicure.">
+    <title>Cabeleireiro e Manicure - Beleza e Estilo</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Corpo do site */
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #ff8b8b; /* Cor suave e elegante para cabeçalho */
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        header nav {
+            margin-top: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Seções principais */
+        section {
+            padding: 50px 10%;
+            margin-bottom: 50px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff8b8b;
+        }
+
+        /* Estilo para cards de serviços */
+        .services .service-card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .services .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .services .service-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .services .service-card h3 {
+            font-size: 1.5rem;
+            color: #ff8b8b;
+        }
+
+        .services .service-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Estilo para o formulário de contato */
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        form input[type="submit"] {
+            background-color: #ff8b8b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #ff5c5c;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff8b8b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            section {
+                padding: 30px 5%;
+            }
+
+            .services .service-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Beleza e Estilo - Cabeleireiro e Manicure</h1>
+    <p>Transforme sua imagem, realce sua beleza.</p>
+</header>
+
+<nav>
+    <a href="#services">Serviços</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#testimonials">Depoimentos</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<section id="services">
+    <h2>Serviços</h2>
+    <ul>
+        <li>Corte de cabelo feminino e masculino - R$ 50,00</li>
+        <li>Penteados para eventos - R$ 80,00</li>
+        <li>Manicure e pedicure - R$ 40,00</li>
+        <li>Alongamento de unhas - R$ 100,00</li>
+        <li>Maquiagem profissional - R$ 90,00</li>
+        <li>Tratamento capilar - R$ 120,00</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Galeria</h2>
+    <img src="imagem1.jpg" alt="Cabelo e unhas de cliente">
+    <img src="imagem2.jpg" alt="Penteado e manicure realizados">
+    <img src="imagem3.jpg" alt="Manicure e penteado profissional">
+</section>
+
+<section id="testimonials">
+    <h2>Depoimentos</h2>
+    <blockquote>
+        "Adorei o atendimento e a qualidade dos serviços! Meu cabelo nunca esteve tão lindo!" 
+        <cite>- Juliana P.</cite>
+    </blockquote>
+    <blockquote>
+        "As unhas ficaram impecáveis, e o ambiente é super acolhedor. Recomendo muito!"
+        <cite>- Ana C.</cite>
+    </blockquote>
+</section>
+
+<section id="contact">
+    <h2>Entre em Contato</h2>
+    <form id="agendamentoForm">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="name" placeholder="Seu nome" required>
+
+        <label for="servico">Serviço</label>
+        <select id="servico" name="servico" required>
+            <option value="Corte de cabelo">Corte de cabelo</option>
+            <option value="Manicure">Manicure</option>
+            <option value="Penteado">Penteado</option>
+        </select>
+
+        <label for="data">Data do Agendamento</label>
+        <input type="date" id="data" name="data" required>
+
+        <input type="submit" value="Confirmar Agendamento">
+    </form>
+
+    <p id="mensagem"></p>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20de%20cabeleireiro" target="_blank">
+        <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            Agende pelo WhatsApp
+        </button>
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Beleza e Estilo | Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.getElementById("agendamentoForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Obter valores do formulário
+        const nome = document.getElementById("nome").value;
+        const servico = document.getElementById("servico").value;
+        const data = document.getElementById("data").value;
+
+        // Validar se os campos estão preenchidos
+        if (!nome || !servico || !data) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+        }
+
+        // Verificar se a data fornecida é válida
+        const dataFormatada = new Date(data);
+
+        // Verificar se a data é inválida
+        if (isNaN(dataFormatada.getTime())) {
+            alert("Por favor, insira uma data válida.");
+            return;
+        }
+
+        // Verificar se a data fornecida é no futuro
+        const dataAtual = new Date();
+        if (dataFormatada <= dataAtual) {
+            alert("A data precisa ser no futuro.");
+            return;
+        }
+
+        // Mostrar uma mensagem de confirmação
+        const mensagem = `Obrigado, ${nome}! Seu agendamento para ${servico} foi confirmado para ${dataFormatada.toLocaleDateString()}.`;
+        document.getElementById("mensagem").innerText = mensagem;
+
+        // Limpar o formulário
+        document.getElementById("agendamentoForm").reset();
+    });
+</script>
+</html>
